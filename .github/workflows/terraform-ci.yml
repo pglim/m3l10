@@ -1,4 +1,4 @@
-name: JS test
+name: JS test v1
 
 on: [push]
 
