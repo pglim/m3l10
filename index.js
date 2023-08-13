@@ -1,3 +1,9 @@
+// before rum
+//npm install express
+
+// to run 
+// npm start
+
 'use strict';
 
 const express = require('express');
@@ -13,7 +19,7 @@ const ENV = 'DEV';
 const app = express();
 app.get('/', (req, res) => {
   res.statusCode = 200;
-  const msg = 'Hello from Node 3!';
+  const msg = 'Hello from Node!';
   res.send(msg);
 });
 
@@ -25,3 +31,5 @@ app.get('/test', (req, res) => {
 
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
+
+module.exports = app;
